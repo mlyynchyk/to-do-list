@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>To Do List</title>
+  </head>
+  <body>
+    <main>
+      <section class="list-section">
+        <div class="container list-container">
+          <h1 class="main-title">To Do List</h1>
+          <form action="">
+            <ul class="task-list" id="taskList">
+              <li onclick="saveTask()" class="task-item">
+                <input class="checkbox" type="checkbox" />
+                <input class="task-text" type="text" />
+                <div class="priority">
+                  <button type="button">
+                    <img
+                      class="priority-icon"
+                      type="button"
+                      src="images/priority-icon.png"
+                      alt="priority"
+                    />
+                  </button>
+                  <div class="priority-content" id="priorityID">
+                    <button>Hight</button>
+                    <button>Medium</button>
+                    <button>Low</button>
+                  </div>
+                </div>
+                <button type="button" onclick="editTask()">
+                  <img
+                    type="button"
+                    class="edit-icon"
+                    src="images/edit-icon.png"
+                    alt="edit"
+                  />
+                </button>
+                <button type="button">
+                  <img
+                    id="removeTaskButton"
+                    class="remove-icon"
+                    src="images/delete-icon.png"
+                    alt="remove"
+                  />
+                </button>
+              </li>
+            </ul>
+            <label for="new-task__button"
+              ><button
+                type="button"
+                id="createTaskButton"
+                class="new-task__button"
+              >
+                <img class="plus-icon" src="images/plus-icon.png" alt="+" />
+                <span class="text__new-task">Create new task</span>
+              </button>
+            </label>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

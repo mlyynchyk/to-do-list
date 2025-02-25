@@ -1,0 +1,109 @@
+html {
+  box-sizing: border-box;
+  color: #fff;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  padding: 15px;
+  margin: 20px;
+  width: 650px;
+  margin: 0 auto;
+  border-radius: 15px;
+  background-color: #8585e0;
+}
+
+.main-title {
+  text-align: center;
+}
+
+.task-list {
+  padding-left: 0;
+}
+
+.task-item {
+  background-color: #aeaeea;
+  border-radius: 7px;
+  padding: 7px;
+  margin-bottom: 15px;
+  display: flex;
+  gap: 20px;
+}
+
+.task-text {
+  width: 100%;
+  border-radius: 20px;
+  background-color: #ccccff;
+  border: 1px solid #000;
+}
+
+.plus-icon,
+.edit-icon,
+.remove-icon,
+.priority-icon,
+.checkbox {
+  width: 35px;
+  height: 35px;
+}
+
+.new-task__button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #aeaeea;
+  border-radius: 7px;
+  padding: 7px;
+}
+
+.text__new-task {
+  width: 100%;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+  color: #fff;
+}
+
+.priority {
+  position: relative;
+  display: inline-block;
+}
+
+.priority-content {
+  display: none;
+  position: absolute;
+  background-color: #ebebfa;
+  border: 1px solid #ddd;
+  min-width: 150px;
+  padding: 10px;
+  z-index: 1000; /* Піднімаємо меню над іншими елементами */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.priority-content button {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  color: black;
+}
