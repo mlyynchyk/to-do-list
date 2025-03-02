@@ -13,9 +13,26 @@
           <h1 class="main-title">To Do List</h1>
           <form action="">
             <ul class="task-list" id="taskList">
-              <li onclick="saveTask()" class="task-item">
+              <li class="task-item">
                 <input class="checkbox" type="checkbox" />
-                <input class="task-text" type="text" />
+                <span class="span-task__text" type="text"></span>
+                <input class="task-text" value="" type="text" />
+                <button type="button">
+                  <img
+                    type="button"
+                    class="save-icon"
+                    src="images/save-icon.png"
+                    alt="save"
+                  />
+                </button>
+                <button type="button">
+                  <img
+                    type="button"
+                    class="edit-icon"
+                    src="images/edit-icon.png"
+                    alt="edit"
+                  />
+                </button>
                 <div class="priority">
                   <button type="button">
                     <img
@@ -26,19 +43,12 @@
                     />
                   </button>
                   <div class="priority-content" id="priorityID">
-                    <button>Hight</button>
-                    <button>Medium</button>
-                    <button>Low</button>
+                    <button class="hight-priority">Hight</button>
+                    <button class="medium-priority">Medium</button>
+                    <button class="low-priority">Low</button>
                   </div>
                 </div>
-                <button type="button" onclick="editTask()">
-                  <img
-                    type="button"
-                    class="edit-icon"
-                    src="images/edit-icon.png"
-                    alt="edit"
-                  />
-                </button>
+
                 <button type="button">
                   <img
                     id="removeTaskButton"

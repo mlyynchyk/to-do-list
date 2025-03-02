@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  color: #fff;
+  color: #000;
 }
 
 *,
@@ -32,7 +32,7 @@ button {
   width: 650px;
   margin: 0 auto;
   border-radius: 15px;
-  background-color: #8585e0;
+  background-color: #bfbfbf;
 }
 
 .main-title {
@@ -44,25 +44,37 @@ button {
 }
 
 .task-item {
-  background-color: #aeaeea;
+  background-color: #999999;
   border-radius: 7px;
   padding: 7px;
   margin-bottom: 15px;
   display: flex;
-  gap: 20px;
+  gap: 10px;
 }
 
-.task-text {
+.task-text,
+.span-task__text {
   width: 100%;
   border-radius: 20px;
-  background-color: #ccccff;
+  background-color: #bfbfbf;
   border: 1px solid #000;
+  color: #000;
+  padding-block: inherit;
+  padding-inline: inherit;
+  font-family: serif;
+  font-size: 20px;
+}
+
+.span-task__text,
+.edit-icon {
+  display: none;
 }
 
 .plus-icon,
 .edit-icon,
 .remove-icon,
 .priority-icon,
+.save-icon,
 .checkbox {
   width: 35px;
   height: 35px;
@@ -72,7 +84,7 @@ button {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: #aeaeea;
+  background-color: #999999;
   border-radius: 7px;
   padding: 7px;
 }
@@ -82,7 +94,6 @@ button {
   text-align: center;
   font-family: "Times New Roman", Times, serif;
   font-size: 30px;
-  color: #fff;
 }
 
 .priority {
